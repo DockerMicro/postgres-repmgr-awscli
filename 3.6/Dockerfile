@@ -13,4 +13,4 @@ RUN apk add --no-cache \
 
 ENTRYPOINT ["/sbin/tini", "--"]
 
-CMD ["repmgrd", "-f /repmgr.conf"]
+CMD ["repmgrd", "-f", "/repmgr.conf"]

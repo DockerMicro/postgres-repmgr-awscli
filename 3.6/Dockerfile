@@ -1,7 +1,7 @@
 FROM pygmy/postgres-repmgr:9.6
 
 MAINTAINER Maciej Lisiewski <maciej.lisiewski@gmail.com>
-ENV AWS_CONFIG_FILE=/etc/aws.config ENV AWS_SHARED_CREDENTIALS_FILE=/etc/aws.credentials
+ENV AWS_CONFIG_FILE=/etc/aws.config AWS_SHARED_CREDENTIALS_FILE=/etc/aws.credentials
 
 RUN apk add --no-cache \
     groff \
